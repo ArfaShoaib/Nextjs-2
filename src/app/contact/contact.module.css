@@ -1,0 +1,87 @@
+
+.bodyview {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+ 
+
+}
+.wrapper {
+  width:350px;
+  max-height: 90vh; /* Set a max height */
+  overflow: auto; /* Allow scrolling if content exceeds height */
+  padding: 10px;
+  background-color: green;
+  margin: 0px auto;
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.1);
+  border-bottom-right-radius: 80px;
+  border-top-left-radius: 80px;
+  border: 1px solid rgb(152, 204, 109);
+  height: 100%;
+  margin-top: 6%;
+  
+  
+  
+}
+.form {
+  margin: 20px 37px;
+  text-align: center;
+  
+  
+}
+.heading {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: 500; /* Change this to 500 */
+  font-size: large;
+  font-style: oblique;
+}
+.inputs,
+.texts {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  outline: none;
+  display: block;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(173, 219, 102);
+}
+.click {
+  border: none;
+  outline: none;
+  border: 1px solid rgb(166, 172, 158);
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(2, 95, 7);
+}
+.click:hover {
+  background-color: rgb(2, 113, 2);
+  color: black;
+}
+/* Responsive design for mobile phones */
+@media (max-width: 480px) {
+  .wrapper {
+    width: 90%; /* Use almost full width on mobile */
+    margin-top: 10%; /* Adjust vertical spacing */
+  }
+
+  .heading {
+    font-size: small; /* Smaller font for heading on mobile */
+  }
+
+  .inputs,
+  .texts {
+    font-size: small; /* Smaller input text for mobile */
+    padding: 5px; /* Reduce padding for smaller screens */
+  }
+
+  .click {
+    padding: 6px; /* Reduce button padding further for mobile */
+    font-size: small; /* Adjust button text size */
+  }
+}

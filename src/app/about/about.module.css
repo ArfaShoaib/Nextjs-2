@@ -1,0 +1,54 @@
+.fullpage {
+  /* background: linear-gradient(135deg, #92e7f6 0%, #f3a5cc 100%); */
+  background-color: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 78vh;
+  width: 100%;
+  overflow: hidden;
+}
+.heading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  text-align: center;
+  margin-top: 0%;
+  font-size: larger;
+  width: 350px;
+  margin: 0px auto;
+  margin-top: 10%;
+}
+.para {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: justify;
+  display: flex;
+  max-width: 500px;
+  left: 34%;
+  position: relative;
+}
+.line {
+  border: none; /* Remove default border */
+  border-top: 2px solid black; /* Black line */
+  width: 20%; /* Adjust the width to add left/right gap */
+  margin: 10px auto; /* Center the line with auto margin */
+}
+@media (max-width: 480px) {
+    .heading {
+      font-size: small; /* Smaller font for mobile */
+      margin-top: 20%; /* Further adjust margin for mobile */
+    }
+  
+    .para {
+      left: 10%; /* Reduce left margin for mobile */
+      max-width: 90%; /* Make the paragraph more fluid */
+      font-size: small; /* Smaller text size for mobile */
+    }
+  
+    .line {
+      width: 40%; /* Increase line width for mobile */
+    }
+  }

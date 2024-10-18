@@ -1,0 +1,57 @@
+.head {
+  background-color:green;
+  height: 14vh;
+  color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  
+}
+
+.heads {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.spans {
+  font-family: "Inconsolata", monospace;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  font-size: large;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.support {
+  display: flex;
+  align-items: center;
+}
+
+.support p {
+  margin-right: 1px; /* Adds space between the text and the icon */
+}
+/* Responsive design for very small screens like mobile */
+@media (max-width: 480px) {
+  .head {
+    height: 10vh;
+    font-size: 0.9em; /* Adjust overall font size */
+  }
+
+  .heads {
+    margin-top: 5px;
+    font-size: 1em; /* Smaller font size for very small screens */
+  }
+
+  .spans {
+    font-size: small; /* Reduce font size for mobile */
+  }
+
+  .support p {
+    font-size: 0.8em; /* Adjust font size inside support class */
+  }
+}

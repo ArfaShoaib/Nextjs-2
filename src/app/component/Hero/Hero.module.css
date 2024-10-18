@@ -1,0 +1,87 @@
+.fullbody {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  word-wrap: break-word;
+  background-color:white;
+}
+
+.heading {
+  font-size: 3rem;
+  margin-bottom: 1rem; /* Space between heading and paragraph */
+  color:black;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 51px
+}
+
+.paragraph {
+  font-size: 1.2rem;
+  color:black;
+  line-height: 1.5;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 19px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .heading {
+    font-size: 2.5rem; 
+  }
+
+  .paragraph {
+    font-size: 0.95rem; 
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem; /* Slightly smaller heading for tablets */
+  }
+
+  .paragraph {
+    font-size: 0.9rem; 
+  }
+
+  .body {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.3rem; 
+  }
+
+  .paragraph {
+    font-size: 0.8rem; 
+  }
+
+  .body {
+    padding: 0.5rem;
+    height: 55vh;
+  }
+}
+
+@media (max-width: 320px) {
+  .heading {
+    font-size: 1.5rem; 
+  }
+
+  .paragraph {
+    font-size: 0.7rem; 
+  }
+
+  .body {
+    padding: 0.3rem;
+    min-width: 300px;
+  }
+}

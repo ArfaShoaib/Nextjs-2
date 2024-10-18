@@ -1,0 +1,99 @@
+
+.nav {
+  background-color: green; 
+  top: 0; 
+  position: sticky; 
+  font-family: "Kanit", sans-serif; 
+  padding: 14px 10%; 
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; 
+  font-weight: 700;
+  font-size: large;
+  width: 100%;
+  overflow: hidden;
+  
+  
+}
+
+.link {
+ 
+  display: flex; 
+  color:black; 
+  text-decoration: none; 
+  margin-right: 10px; 
+  margin-left: 10px;
+  position: relative; 
+  left: 4%; 
+  letter-spacing: 1px; 
+  padding: 5px 40px; 
+  transition: color 0.5s ease; 
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+  font-size: 15px;
+  justify-content: center;
+}
+
+.link:hover {
+  color:#FFD700; 
+}
+
+.link:last-child {
+  margin-right: 0; 
+}
+/* Responsive Styles */
+@media (max-width: 1024px) {
+ .nav  { 
+    justify-content: center; 
+  }
+
+  .link {
+    margin-left: 5%; 
+    left: 0; 
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 14px 10%; /* Reduce padding for tablets */
+    justify-content: center; /* Center items in tablet view */
+  }
+
+  .link {
+    margin-left: 3%; /* Adjust margin for tablet screens */
+    left: 0; /* Remove left positioning */
+    flex: 1; /* Allow links to take equal space */
+    text-align: center; /* Center text in each link */
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    flex-direction: row; /* Stack items vertically on mobile */
+    padding: 10px; /* Further reduce padding */
+    align-items: center; /* Center links in mobile view */
+  }
+
+  .link {
+    margin: 5px 10; /* Vertical margin for stacked links */
+    width: 100%; /* Make links take full width */
+    text-align: center; /* Center text for better readability */
+  }
+}
+
+@media (max-width: 320px) {
+  .nav {
+    padding: 8px; /* Reduce padding for very small screens */
+    justify-content: center; /* Center items in mobile view */
+  }
+
+  .link {
+    font-size: 0.9rem; /* Reduce font size for very small screens */
+    padding: 5px; /* Adjust padding for links */
+    width: 100%; /* Full width links */
+    margin: 3px 0; /* Reduced margin */
+  }
+}
